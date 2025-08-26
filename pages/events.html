@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>События</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/modal.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="active">The Conjuring</a>
+
+            <div class="menu-center">
+              <a href="events.html">События</a>
+              <a href="films.html">Фильмы</a>
+              <a href="characters.html">Персонажи</a>
+              <a href="cards.html">Карточки</a>
+            </div>
+
+            <div class="menu-call">
+              <a href="#" data-modal>Вызов</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('https://kinotv.ru/upload/webp/100/upload/setka-editor/c7e/nlkf58qwtftlxm4h0903wn5v4a6uejtk.webp')"></div>
+                <div class="hero-slide" style="background-image: url('https://thumbs.dfs.ivi.ru/storage26/contents/0/f/e9d19a87af048f3b2369d8323e5810.jpg/858x483/?q=85')"></div>
+                <div class="hero-slide" style="background-image: url('https://icdn.lenta.ru/images/2025/05/29/16/20250529160015830/wide_4_3_e607bfccf69e5fdcfcbcec6baeed4701.jpg')"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="text-content">
+                    <h1>Заклятие 4</h1>
+                    <h2>Последний обряд</h2>
+                    <p>
+                    Сэд и Лоррейн Уоррены — супружеская пара, известная своими многочисленными исследованиями необъяснимых паранормальных явлений. 
+                    Им уже приходилось столкнуться с проклятой куклой Аннабель, демонической монахиней и жертвами оккультизма. 
+                    Теперь же Эда и Лоррейн ждет самое жуткое дело в их жизни.
+                    </p>
+                    <a href="#trailer" class="btn-trailer">трейлер</a>
+                </div>
+
+                <div class="ticket-btn">
+                    <a href="#" class="buy-ticket-btn">Купить билет</a>
+                </div>
+            </div>
+        </section>
+        <section class="premiere-banner">
+            <p>В сентябре, узнайте почему это дело было последним </p>
+        </section>
+        <section class="chronology-section">
+            <h2 class="chronology-title">Хронология фильмов по Декагону</h2>
+            <div class="nonagon-wrap">
+                <svg id="nonagonSvg" viewBox="0 0 800 800">
+                <defs>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="4" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                    </filter>
+                    <linearGradient id="edgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff4444"/>
+                    <stop offset="100%" stop-color="#aa0000"/>
+                    </linearGradient>
+                </defs>
+                <polygon id="deca" class="nonagon" points=""/>
+                <path id="nonagonPath" d=""/>
+                <circle r="8" class="runner">
+                    <animateMotion dur="10s" repeatCount="indefinite">
+                    <mpath href="#nonagonPath"/>
+                    </animateMotion>
+                </circle>
+                <g id="labels"></g>
+                </svg>
+            </div>
+        </section>
+        <section id="trailer" class="trailer-section">
+            <h2>Трейлер</h2>
+            <div class="trailer-video">
+                <video width="100%" height="500" controls poster="https://i.ytimg.com/vi/TEFeEEwj_Hw/maxresdefault.jpg">
+                <source src="../media/TheConjuring.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <footer class="mini-footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                  <img src="https://www.atomicmonster.com/images/719_cfhnt6_atomic-monster-atom-logopng.png" alt="logo" class="footer-logo">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/New_Line_Cinema_2024.svg" alt="logo" class="footer-logo">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg" alt="logo" class="footer-logo">
+                </div>
+                <div class="footer-center">THE CONJURING™</div>
+                <div class="footer-right">conjuring@gmail.com</div>
+            </div>
+        </footer>
+    </main>
+    <div class="ticket-popup" id="ticket-popup">
+        <div class="ticket-popup__content">
+            <span class="ticket-popup__close" id="close-ticket-popup">&times;</span>
+            <h2>Купить билет</h2>
+
+            <form class="ticket-popup__form">
+              <div>
+                  <label for="name">Ваше имя:</label>
+                  <input type="text" id="name" name="name" placeholder="Введите имя">
+              </div>
+
+              <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Введите email">
+              </div>
+
+              <div>
+                  <label for="tickets">Количество билетов:</label>
+                  <input type="number" id="tickets" name="tickets" min="1" value="1">
+              </div>
+
+              <button type="submit">Оплатить</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="contactModal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                  <div class="modal_close">&times;</div>
+                  <div class="modal_title">Мы свяжемся с вами</div>
+                  
+                  <label>
+                      <input
+                      required
+                      placeholder="Введи e-mail..."
+                      name="email"
+                      type="email"
+                      class="modal_input"
+                      >
+                  </label>
+                  <label>
+                      <input
+                      required
+                      placeholder="Введи номер..."
+                      name="phone"
+                      type="text"
+                      class="modal_input">
+                  </label>
+                  <button class="btn btn_dark btn_min">Вызвать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  <script src="../js/events.js"></script>
+  <script src="../js/modal.js"></script>
+</body>
+</html>

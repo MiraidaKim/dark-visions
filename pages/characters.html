@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Персонажи</title>
+  <link rel="stylesheet" href="../css/characters.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="active">The Conjuring</a>
+
+      <div class="menu-center">
+        <a href="events.html">События</a>
+        <a href="films.html">Фильмы</a>
+        <a href="characters.html">Персонажи</a>
+        <a href="cards.html">Карточки</a>
+      </div>
+
+      <div class="menu-call">
+        <a href="#" data-modal>Вызов</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="characters-page">
+    <h1>Персонажи</h1>
+    <div class="filter">
+      <button data-filter="all" class="active">Все</button>
+      <button data-filter="Люди">Люди</button>
+      <button data-filter="Демоны">Демоны</button>
+      <button data-filter="Артефакты">Артефакты</button>
+    </div>
+
+    <!-- Список персонажей -->
+    <div id="characters-container" class="characters-grid"></div>
+    <section class="card_switcher">
+      <div class="container">
+        <h2>Card Switcher</h2>
+        <div class="card" id="card"></div>
+        <div class="inner_card_switcher">
+          <button class="btn_prev">Prev</button>
+          <button class="btn_next">Next</button>
+        </div>
+      </div>
+    </section>
+
+<script src="../js/cardSwitcher.js"></script>
+
+  </main>
+  <footer class="mini-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="https://www.atomicmonster.com/images/719_cfhnt6_atomic-monster-atom-logopng.png" alt="logo" class="footer-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/New_Line_Cinema_2024.svg" alt="logo" class="footer-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg" alt="logo" class="footer-logo">
+          
+
+        </div>
+        <div class="footer-center">THE CONJURING™</div>
+        <div class="footer-right">conjuring@gmail.com</div>
+      </div>
+    </footer>
+
+          <!-- Модальное окно -->
+    <div class="modal" id="contactModal">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами</div>
+                
+                <label>
+                    <input
+                    required
+                    placeholder="Введи e-mail..."
+                    name="email"
+                    type="email"
+                    class="modal_input"
+                    >
+                </label>
+                <label>
+                    <input
+                    required
+                    placeholder="Введи номер..."
+                    name="phone"
+                    type="text"
+                    class="modal_input">
+                </label>
+                <button class="btn btn_dark btn_min">Вызвать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  <script src="../js/characters.js"></script>
+  <script src="../js/modal.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,376 @@
+/* ================== Общие стили ================== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  color: white;
+}
+
+@font-face {
+  font-family: 'Abaddon';
+  src: url('../font/ofont.ru_Abaddon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ================== Навигация ================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   background: rgba(0, 0, 0, 0.3); 
+  backdrop-filter: blur(8px);      
+  -webkit-backdrop-filter: blur(8px); 
+  padding: 15px 100px;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray;
+}
+
+/* Центральное меню */
+.menu-center {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-center a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray;
+}
+
+/* Кнопка "Вызов" */
+.menu-call a {
+  padding: 12px 28px;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(255,0,0,0.6);
+}
+
+.menu-call a:hover {
+  background: red;
+  color: black;
+  box-shadow: 0 0 20px red, 0 0 40px darkred;
+}
+
+/* Лого "Заклятие" */
+nav a.active {
+  color: red;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgb(239, 193, 193),
+               0 0 20px rgb(201, 105, 124),
+               0 0 30px rgb(182, 139, 139);
+  animation: glow 1.5s infinite alternate;
+  font-family: 'Abaddon', Arial, sans-serif;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(228, 155, 155),
+                 0 0 10px rgb(243, 218, 223),
+                 0 0 15px rgb(255, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(46, 32, 32),
+                 0 0 35px rgb(193, 75, 99),
+                 0 0 50px rgb(5, 1, 1);
+  }
+}
+
+
+.menu-right {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-right a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray;
+}
+
+/* ===== Главный экран с видео ===== */
+.main-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main-hero-content {
+  position: relative;
+  z-index: 1;  
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 8px black;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 20px;
+}
+
+/* Заголовок */
+.main-hero-content h1 {
+  font-size: 57px;
+  color: #610303;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #e95a5a,
+               0 0 10px #ffffff,
+               0 0 20px #a47474,
+               0 0 40px #d6b6b6;
+  margin: 0;
+  font-family: 'Abaddon', Arial, sans-serif;
+}
+
+
+.main-hero-content p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: 'Abaddon', Arial, sans-serif;
+}
+
+
+.color-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-color {
+  border: 2px solid white;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.3s;
+}
+
+.btn-color:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 10px white, 0 0 20px gray;
+}
+
+
+
+/* ================== Слайдер ================== */
+
+
+.slider-wrap {
+  max-width: 1200px;
+  margin: 200px auto 100px auto;
+  padding: 0 20px;
+  
+}
+
+
+.slider-wrap .slider-title {
+  text-align: center;
+  font-size: 40px;
+  margin: 0 0 16px 0;
+  color: #c4a3a3;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px red, 0 0 15px darkred, 0 0 25px black;
+  font-family: 'Abaddon', Arial, sans-serif;
+}
+
+
+.slider-out {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+
+.slider-section {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid red;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Контейнер слайдов */
+.slider-container {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+
+.arrow.outside {
+  position: static;
+  transform: none;
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  user-select: none;
+  text-shadow: 0 0 10px black, 0 0 20px darkred;
+  padding: 10px 14px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s, color 0.2s, background 0.2s;
+}
+.arrow.outside:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.6);
+  transform: scale(1.08);
+}
+
+
+.nav-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.nav-item {
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-item.active {
+  background: rgb(76, 0, 0);
+  box-shadow: 0 0 10px red, 0 0 20px darkred;
+}
+.nav-item:hover {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 640px) {
+  .arrow.outside { font-size: 40px; }
+  .slider-container { height: 360px; }
+}
+
+
+/* ================== Ознакомительный блок ================== */
+.intro-block {
+  background: url("https://s3.stroi-news.ru/img/kartinki-na-krasnom-fone-5.jpg") center/cover no-repeat fixed; 
+  
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Cinzel', serif;
+  position: relative;
+  overflow: hidden;
+}
+.intro-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.intro-block h2,
+.intro-block p {
+  position: relative;
+  z-index: 1;
+}
+.intro-block h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #a28003;
+}
+.intro-block p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+
+/* ================== Мини-футер ================== */.mini-footer {
+  background: #1a1a1a;     
+  color: #ccc;             
+  padding: 30px 20px;     
+  font-size: 20px;
+  border-top: 2px solid #bd0000; 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;           
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  height: 30px;           
+  filter: brightness(0) invert(1); 
+   margin-left: 30px; 
+}
+
+.footer-center {
+  font-weight: bold;
+  color: #740000;  
+  font-family: 'Abaddon', Arial, sans-serif;      
+  margin-left: 100px; 
+  font-size: 30px;
+}
+
+.footer-right {
+  font-style: italic;
+   margin-left: 50px;
+   font-family: 'Abaddon', Arial, sans-serif; 
+}
+

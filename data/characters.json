@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Эд Уоррен",
+    "image": "https://images.kinorium.com/movie/cast/714153/w150_698990.jpg?1618586066",
+    "description": "Демонолог, исследователь паранормальных явлений. Муж Лоррейн.",
+    "category": "Люди"
+  },
+  {
+    "name": "Лоррейн Уоррен",
+    "image": "https://images-s.kinorium.com/movie/cast/714153/w600_203237.jpg?1618586049",
+    "description": "Медиум, обладающая даром видеть духов. Жена Эда.",
+    "category": "Люди"
+  },
+  {
+    "name": "Джуди Уоррен",
+    "image": "https://preview.redd.it/mckenna-as-judy-warren-from-annabelle-comes-home-v0-ucidxm97kfuc1.jpg?width=640&crop=smart&auto=webp&s=42621f334df9c7b2112f2042bcf647eafac188a8",
+    "description": "Дочь Эда и Лоррейн Уоррен, подвергавшаяся атакам злых сил.",
+    "category": "Люди"
+  },
+  {
+    "name": "Семья Перрон",
+    "image": "https://kino-teatr.ua/public/main/interview/article_27.jpg",
+    "description": "Семья, пострадавшая от паранормальных событий в Роуд-Айленде.",
+    "category": "Люди"
+  },
+  {
+    "name": "Каролин Перрон",
+    "image": "https://fanfics.me/images/fandoms_heroes/1488-1568568507.jpg",
+    "description": "Мать семейства Перрон, одержимая злым духом.",
+    "category": "Люди"
+  },
+  {
+    "name": "Роджер Перрон",
+    "image": "https://images-s.kinorium.com/persona/600/387595.jpg?1643286540",
+    "description": "Отец семейства Перрон, пытавшийся защитить свою семью.",
+    "category": "Люди"
+  },
+  {
+    "name": "Фр. Гордон",
+    "image": "https://www.kino-teatr.ru/acter/album/78977/1479818.jpg",
+    "description": "Католический священник, помогавший Уорренам в их расследованиях.",
+    "category": "Люди"
+  },
+  {
+    "name": "Фр. Бёрк",
+    "image": "https://24smi.org/public/media/resize/800x-/2018/8/30/demian-bichir.jpg",
+    "description": "Священник, исследовавший монастырь в Румынии вместе с сестрой Айрин.",
+    "category": "Люди"
+  },
+  {
+    "name": "Сестра Айрин",
+    "image": "https://www.afisha.uz/uploads/media/2023/09/2a59547eecb9acaa3181c373b8fd4481_l.jpg",
+    "description": "Послушница, обладающая даром видений. Сражалась с Валаком.",
+    "category": "Люди"
+  },
+  {
+    "name": "Френчи (Морис)",
+    "image": "https://www.soyuz.ru/public/uploads/files/2/7627724/20230912131059f68cef14d8.jpg",
+    "description": "Фермер, помогавший в Румынии. Позднее одержим Валаком.",
+    "category": "Люди"
+  },
+  {
+    "name": "Даниэла Риос",
+    "image": "https://www.postavy.cz/foto/daniela-rios-foto.jpg",
+    "description": "Подруга Джуди Уоррен, случайно выпустившая злые силы, тронув Анабель.",
+    "category": "Люди"
+  },
+  {
+    "name": "Анабель",
+    "image": "https://ic.pics.livejournal.com/tanjand/44781189/95460224/95460224_original.jpg",
+    "description": "Зловещая кукла, через которую проявляется демон.",
+    "category": "Артефакты"
+  },
+  {
+    "name": "Валак (Монахиня)",
+    "image": "https://sun9-67.userapi.com/impg/15tw9Y0Xf1h04pOUJn8nrTbYdHn7CgaAqp49sg/TjkpjIrUt_c.jpg?size=1280x680&quality=96&sign=62d13e62b2f4a7cd9395544c6a3072fd&type=album",
+    "description": "Демон в образе монахини. Один из главных врагов Уорренов.",
+    "category": "Демоны"
+  },
+  {
+    "name": "Батшеба Шерман",
+    "image": "https://fanfics.me/images/fandoms_heroes/1488-1568568517-big.jpg",
+    "description": "Ведьма, проклявшая землю, на которой построен дом семьи Перрон.",
+    "category": "Демоны"
+  },
+  {
+    "name": "Кривой человек",
+    "image": "https://horrorzone.ru/uploads/_gallery2/47712/crook3.jpg",
+    "description": "Мистическое существо из «Заклятие 2», связанное с Валаком.",
+    "category": "Демоны"
+  },
+  {
+    "name": "Самара (La Llorona)",
+    "image": "https://monsterface.ru/wp-content/uploads/2021/10/la_llorona.jpg",
+    "description": "Плачущая женщина, охотившаяся на детей.",
+    "category": "Демоны"
+  },
+  {
+    "name": "Обезьяна-символ",
+    "image": "https://gamemag.ru/images/cache/News/News190439/6fb8863056-1_350x250.jpg",
+    "description": "Мистическая игрушка из комнаты артефактов Уорренов.",
+    "category": "Артефакты"
+  },
+  {
+    "name": "Телевизор-провидец",
+    "image": "https://masterpiecer-images.s3.yandex.net/373cf6a7549b11eeb2f896e999421984:upscaled",
+    "description": "Артефакт из коллекции Уорренов, показывающий смерть людей.",
+    "category": "Артефакты"
+  },
+  {
+    "name": "Жемчужина смерти",
+    "image": "https://www.maysaku.ru/_src/Catalog.Item/434_images/343057518/orig_1288952782_p095c40c_big.jpg",
+    "description": "Артефакт из коллекции Уорренов, ожерелье пытается задушить своего владельца.",
+    "category": "Артефакты"
+  },
+   {
+    "name": "Сатанинская фигура",
+    "image": "https://cdn.travelask.ru/system/images/files/001/527/672/wysiwyg_jpg/blob.jpg?1649952780",
+    "description": "Артефакт из коллекции Уорренов, приходит силуэт в черной мантии",
+    "category": "Артефакты"
+  },
+  {
+    "name": "Человеческий череп",
+    "image": "https://static.insales-cdn.com/images/products/1/2065/982968337/large_4B8A4239-EAF3-480F-8A26-EB437FD574AB.jpg",
+    "description": "Артефакт из коллекции Уорренов, настоящий череп человека для культов.",
+    "category": "Артефакты"
+  },
+  {
+    "name": "Шкатулка семьи Перронов",
+    "image": "https://otvet.imgsmail.ru/download/289582572_a26407783947669823f45bcd21370f89.jpg",
+    "description": "Артефакт из коллекции Уорренов, был домом демона",
+    "category": "Артефакты"
+  }, 
+  {
+    "name": "Кукла тень",
+    "image": "https://cdn.travelask.ru/system/images/files/001/527/673/wysiwyg_jpg/blob.jpg?1649952804",
+    "description": "Артефакт из коллекции Уорренов, умеет проникать в сознание и в сны людей.",
+    "category": "Артефакты"
+  },
+  {
+    "name": "Валак в облике козла",
+    "image": "https://i.ytimg.com/vi/9IWMVPKjwCQ/oardefault.jpg?sqp=-oaymwEYCJUDENAFSFqQAgHyq4qpAwcIARUAAIhC&rs=AOn4CLCyUw4rzJHl7gLQ7Nftys1Ego_2tg",
+    "description": "является частью проявлений главного антагониста Валака",
+    "category": "Демоны"
+  }
+]

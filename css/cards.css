@@ -1,0 +1,204 @@
+/* ================== Общие стили ================== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: 'Abaddon';
+  src: url('../font/ofont.ru_Abaddon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ================== Навигация ================== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(39, 30, 67, 0.3); /* слегка прозрачный черный */
+  backdrop-filter: blur(8px);      /* блюр как стекло */
+  -webkit-backdrop-filter: blur(8px); /* для Safari */
+  padding: 15px 100px;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray;
+}
+
+/* Центральное меню */
+.menu-center {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-center a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray;
+}
+
+/* Кнопка "Вызов" */
+.menu-call a {
+  padding: 12px 28px;
+  border: 2px solid red;
+  border-radius: 8px;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 8px rgba(255,0,0,0.6);
+}
+
+.menu-call a:hover {
+  background: red;
+  color: black;
+  box-shadow: 0 0 20px red, 0 0 40px darkred;
+}
+
+/* Лого "Заклятие" */
+nav a.active {
+  color: red;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgb(239, 193, 193),
+               0 0 20px rgb(201, 105, 124),
+               0 0 30px rgb(182, 139, 139);
+  animation: glow 1.5s infinite alternate;
+  font-family: 'Abaddon', Arial, sans-serif;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(228, 155, 155),
+                 0 0 10px rgb(243, 218, 223),
+                 0 0 15px rgb(255, 255, 255);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(46, 32, 32),
+                 0 0 35px rgb(193, 75, 99),
+                 0 0 50px rgb(5, 1, 1);
+  }
+}
+
+/* Правое меню */
+.menu-right {
+  display: flex;
+  gap: 50px;
+}
+
+.menu-right a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px gray;
+}
+
+.cards {
+  padding: 60px 20px;
+  background: url("https://avatanplus.com/files/resources/original/57e3cdbc8922615751dba892.jpg") center/cover fixed;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-item {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid var(--orange);
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.982);
+}
+
+.card-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: var(--orange);
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #8a0000;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+
+
+/* ================== Мини-футер ================== */
+.mini-footer {
+  background: #1a1a1a;       
+  color: #ccc;               
+  padding: 30px 20px;       
+  font-size: 20px;
+  border-top: 2px solid #bd0000;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;           
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  height: 30px;           
+  filter: brightness(0) invert(1); 
+   margin-left: 30px; 
+}
+
+.footer-center {
+  font-weight: bold;
+  color: #740000;  
+  font-family: 'Abaddon', Arial, sans-serif;      
+  margin-left: 100px; 
+  font-size: 30px;
+}
+
+.footer-right {
+  font-style: italic;
+   margin-left: 50px;
+   font-family: 'Abaddon', Arial, sans-serif; 
+}
+

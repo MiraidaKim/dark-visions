@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фильмы — The Conjuring Universe</title>
+  <link rel="stylesheet" href="../css/modal.css"> 
+  <link rel="stylesheet" href="../css/films.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="active">The Conjuring</a>
+
+        <div class="menu-center">
+          <a href="events.html">События</a>
+          <a href="films.html">Фильмы</a>
+          <a href="characters.html">Персонажи</a>
+          <a href="cards.html">Карточки</a>
+        </div>
+
+            <div class="menu-call">
+              <a href="#" data-modal>Вызов</a>
+            </div>
+        </nav>
+  </header>
+
+  <section class="films">
+      <div class="films-container"></div>
+  </section>
+
+  <div class="tab_slider">
+    <div class="container">
+      <h3>Mоменты из фильмов</h3>
+      <div class="inner_tab_slider">
+        <div class="tab_contents_block">
+          <div class="tab_content_block">
+            <img src="https://i.makeagif.com/media/4-07-2022/nQN6r7.gif" alt="Заклятие">
+          </div>
+          <div class="tab_content_block">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXgwNmJubnpyNmRsbW1yb2w0NDBwMmg1b3lzMmJraWh3cWNwenZubyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1vZeiU5RT06L6pzzFq/200.webp" alt="Аннабель">
+          </div>
+          <div class="tab_content_block">
+            <img src="https://otvet.imgsmail.ru/download/57879417_53d11d38cd33307fc675e371ac9b41e9.gif" alt="Монахиня">
+          </div>
+          <div class="tab_content_block">
+            <img src="https://img.filmsactu.net/datas/films/c/o/conjuring-2/n/conjuring-2-gif-58ab238ae6f8f.gif" alt="Проклятие">
+          </div>
+          <div class="tab_content_items">
+            <button class="tab_content_item tab_content_item_active">Заклятие</button>
+            <button class="tab_content_item">Аннабель</button>
+            <button class="tab_content_item">Монахиня</button>
+            <button class="tab_content_item">Проклятие</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mini-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="https://www.atomicmonster.com/images/719_cfhnt6_atomic-monster-atom-logopng.png" alt="logo" class="footer-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/New_Line_Cinema_2024.svg" alt="logo" class="footer-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg" alt="logo" class="footer-logo">
+      </div>
+      <div class="footer-center">THE CONJURING™</div>
+      <div class="footer-right">conjuring@gmail.com</div>
+    </div>
+  </footer>
+  <div id="filmModal" class="film-modal">
+    <div class="film-modal-content">
+      <span class="film-modal-close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalDescription"></div>
+      <iframe id="modalTrailer" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+   <!-- Модальное окно -->
+  <div class="modal" id="contactModal">
+    <div class="modal_dialog">
+      <div class="modal_content">
+        <form action="#">
+          <div class="modal_close">&times;</div>
+          <div class="modal_title">Мы свяжемся с вами</div>
+          
+          <label>
+            <input
+              required
+              placeholder="Введи e-mail..."
+              name="email"
+              type="email"
+              class="modal_input"
+            >
+          </label>
+          <label>
+            <input
+              required
+              placeholder="Введи номер..."
+              name="phone"
+              type="text"
+              class="modal_input">
+          </label>
+          <button class="btn btn_dark btn_min">Вызвать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../js/films.js"></script>
+  <script src="../js/modal.js"></script>
+</body>
+</html>
+

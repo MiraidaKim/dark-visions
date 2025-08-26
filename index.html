@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark visions</title>
+  <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/modal.css"> 
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="active">The Conjuring</a>
+
+      <div class="menu-center">
+        <a href="pages/events.html">События</a>
+        <a href="pages/films.html">Фильмы</a>
+        <a href="pages/characters.html">Персонажи</a>
+        <a href="pages/cards.html">Карточки</a>
+      </div>
+
+      <div class="menu-call">
+        <a href="#" data-modal>Вызов</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Блок с видео -->
+    <section class="main-hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="media/background.mp4" type="video/mp4">
+      </video>
+      <div class="main-hero-content">
+        <h1>The Conjuring Universe</h1>
+        <p id="quote">And for us humans, our destiny depends on who we follow.</p>
+
+        <div class="color-buttons">
+          <button class="btn-color"></button>
+          <button class="btn-color"></button>
+          <button class="btn-color"></button>
+          <button class="btn-color"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Ознакомительный блок -->
+    <section class="intro-block">
+      <h2>Добро пожаловать во вселенную Заклятия</h2>
+      <p>В основе картины лежит реальная история семьи Перрон, которые утверждали, что жили в окружении привидений, как добрых, так и злых. Духи населяли дом на Род-Айленде, в котором Перроны проживали в семидесятых годах XX века.</p>
+    </section>
+
+    <!-- Слайдер -->
+    <section class="slider-wrap">
+      <h2 class="slider-title">Кадры из фильмов</h2>
+
+      <div class="slider-out">
+        <div class="arrow outside left-arrow">&#10094;</div>
+
+        <div class="slider-section">
+          <div class="slider-container">
+            <div class="slide active" style="background-image: url('https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/0272db82-a24a-49d7-9dea-9dade2758129/x178_2');"></div>
+            <div class="slide" style="background-image: url('https://img.gazeta.ru/files3/101/11957101/kinopoisk.ru-The-Nun-3253420-pic905-895x505-83996.jpg');"></div>
+            <div class="slide" style="background-image: url('https://klubkrik.ru/wp-content/uploads/2014/09/%D0%90%D0%BD%D0%BD%D0%B0%D0%B1%D0%B5%D0%BB%D1%8C-%D0%BA%D0%B0%D0%B4%D1%80-2.jpg');"></div>
+            <div class="slide" style="background-image: url('https://klubkrik.ru/wp-content/uploads/2025/08/%D0%97%D0%B0%D0%BA%D0%BB%D1%8F%D1%82%D0%B8%D0%B5-%D0%BC%D0%BE%D0%BD%D0%B0%D1%85%D0%B8%D0%BD%D0%B8-%D0%BA%D0%B0%D0%B4%D1%80-1.jpg');"></div>
+          </div>
+
+          <div class="nav-indicators">
+            <span class="nav-item active"></span>
+            <span class="nav-item"></span>
+            <span class="nav-item"></span>
+            <span class="nav-item"></span>
+          </div>
+        </div>
+
+        <div class="arrow outside right-arrow">&#10095;</div>
+      </div>
+    </section>
+
+    <!-- footer-->
+    <footer class="mini-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <img src="https://www.atomicmonster.com/images/719_cfhnt6_atomic-monster-atom-logopng.png" alt="logo" class="footer-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/New_Line_Cinema_2024.svg" alt="logo" class="footer-logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Warner_Bros._logo_2023.svg" alt="logo" class="footer-logo">
+          
+
+        </div>
+        <div class="footer-center">THE CONJURING™</div>
+        <div class="footer-right">conjuring@gmail.com</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="contactModal">
+    <div class="modal_dialog">
+      <div class="modal_content">
+        <form action="#">
+          <div class="modal_close">&times;</div>
+          <div class="modal_title">Мы свяжемся с вами</div>
+          
+          <label>
+            <input
+              required
+              placeholder="Введи e-mail..."
+              name="email"
+              type="email"
+              class="modal_input"
+            >
+          </label>
+          <label>
+            <input
+              required
+              placeholder="Введи номер..."
+              name="phone"
+              type="text"
+              class="modal_input">
+          </label>
+          <button class="btn btn_dark btn_min">Вызвать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>
